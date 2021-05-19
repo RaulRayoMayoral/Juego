@@ -1,2 +1,5 @@
 CAA,2
 YAA,1
+BAA,8
+DBB,2
+YAA,0

@@ -41,7 +41,7 @@ public class MyGdxGame extends ApplicationAdapter {
 		fondo = new Fondo();
 		jugador = new Jugador();
 		enemigos = new ArrayList<>();
-		temporizadorNuevoEnemigo = new Temporizador(120);
+		temporizadorNuevoEnemigo = new Temporizador(95);
 		disparosAEliminar = new ArrayList<>();
 		enemigosAEliminar = new ArrayList<>();
 		scoreboard = new ScoreBoard();
