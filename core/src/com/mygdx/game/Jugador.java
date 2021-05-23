@@ -11,7 +11,7 @@ public class Jugador {
     Animacion animacion = new Animacion(6f, true,  "cohete.png","cohete2.png","cohete1.png");
     float x, y, w, h, v;
     List<Disparo> disparos = new ArrayList<>();
-    int vidas = 3;
+    int vidas = 4;
     int puntos = 0;
     boolean muerto = false;
     Temporizador temporizadorFireRate = new Temporizador(20);
