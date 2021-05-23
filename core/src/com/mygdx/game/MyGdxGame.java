@@ -24,6 +24,7 @@ public class MyGdxGame extends ApplicationAdapter {
 	boolean gameover;
 
 
+
 	@Override
 	public void create() {
 		batch = new SpriteBatch();
