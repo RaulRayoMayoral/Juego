@@ -11,12 +11,12 @@ public class Jugador {
     Animacion animacion = new Animacion(6f, true,  "cohete.png","cohete2.png","cohete1.png");
     float x, y, w, h, v;
     List<Disparo> disparos = new ArrayList<>();
-    int vidas = 3;
+    int vidas = 5;
     int puntos = 0;
     boolean muerto = false;
     Temporizador temporizadorFireRate = new Temporizador(20);
     Temporizador temporizadorRespawn = new Temporizador(120, false);
-    public Sound disparo = Gdx.audio.newSound(Gdx.files.internal("disparo.mp3"));
+    public Sound disparo = Gdx.audio.newSound(Gdx.files.internal("disparolaser.mp3"));
     Jugador() {
         x = 100;
         y = 100;
