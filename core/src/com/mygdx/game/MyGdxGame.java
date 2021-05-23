@@ -36,7 +36,7 @@ public class MyGdxGame extends ApplicationAdapter {
 		inicializarJuego();
 
 		Sound sound = Gdx.audio.newSound(Gdx.files.internal("melodiajuego.mp3"));
-		sound.setLooping(sound.play(1.0f), true);
+		sound.setLooping(sound.play(0.20f), true);
 
 	}
 
