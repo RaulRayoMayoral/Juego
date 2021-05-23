@@ -2,6 +2,7 @@ package com.mygdx.game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.audio.Sound;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +16,7 @@ public class Jugador {
     boolean muerto = false;
     Temporizador temporizadorFireRate = new Temporizador(20);
     Temporizador temporizadorRespawn = new Temporizador(120, false);
-
+    public Sound disparo = Gdx.audio.newSound(Gdx.files.internal("disparo.mp3"));
     Jugador() {
         x = 100;
         y = 100;
@@ -34,6 +35,7 @@ public class Jugador {
 
         if (Gdx.input.isKeyPressed(Input.Keys.SPACE) && temporizadorFireRate.suena() && !muerto) {
             disparos.add(new Disparo(x + w / 2, y + h));
+            disparo.play();
         }
 
         if (x < 0) x = 0;
