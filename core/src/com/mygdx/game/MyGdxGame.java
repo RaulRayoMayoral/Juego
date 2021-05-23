@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.audio.Sound;
 
 public class MyGdxGame extends ApplicationAdapter {
 	SpriteBatch batch;
@@ -32,6 +33,10 @@ public class MyGdxGame extends ApplicationAdapter {
 		font.getData().setScale(2f);
 
 		inicializarJuego();
+
+		Sound sound = Gdx.audio.newSound(Gdx.files.internal("melodiajuego.mp3"));
+		sound.setLooping(sound.play(1.0f), true);
+
 	}
 
 	void inicializarJuego(){
