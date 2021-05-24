@@ -11,7 +11,7 @@ public class Enemigo {
     Enemigo(String tipo) {
         if (tipo.equals("alien")) {
             y = 640;
-            x = Utils.random.nextInt(480);
+            x = Utils.random.nextInt(720);
             w = 80;
             h = 80;
             vx = -2;
@@ -19,7 +19,7 @@ public class Enemigo {
             this.texture = new Texture("alien.png");
         } else if (tipo.equals("alien2")) {
             y = 640;
-            x = Utils.random.nextInt(480);
+            x = Utils.random.nextInt(720);
             w = 80;
             h = 80;
             vx = -3;
@@ -27,7 +27,7 @@ public class Enemigo {
             this.texture = new Texture("alien2.png");
         } else if (tipo.equals("alien3")) {
             y = 640;
-            x = Utils.random.nextInt(480);
+            x = Utils.random.nextInt(720);
             w = 80;
             h = 80;
             vx = -2;

@@ -86,7 +86,7 @@ public class MyGdxGame extends ApplicationAdapter {
 		}
 
 		for (Disparo disparo : jugador.disparos)
-			if (disparo.x > 640)
+			if (disparo.y > 720)
 				disparosAEliminar.add(disparo);
 
 		for (Disparo disparo : disparosAEliminar) jugador.disparos.remove(disparo);
