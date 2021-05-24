@@ -18,7 +18,7 @@ public class Enemigo {
             vy = 0;
             this.texture = new Texture("alien.png");
         } else if (tipo.equals("alien2")) {
-            y = 640;
+            y =640 ;
             x = Utils.random.nextInt(720);
             w = 80;
             h = 80;
